@@ -1,0 +1,6 @@
+<resources>
+    <string-array name="user_roles">
+        <item>Patient</item>
+        <item>Doctor</item>
+    </string-array>
+</resources>

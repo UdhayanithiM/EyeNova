@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ambieye"
+        tools:targetApi="31">
+
+        <!-- Splash screen (first to open) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main screen -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Login screen -->
+        <activity android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- Sign Up screen -->
+        <activity android:name=".SignUpActivity" 
+            android:exported="false" />
+
+        <!-- Forgot Password screen -->
+        <activity android:name=".ForgotPasswordActivity" 
+            android:exported="false" />
+            
+        <activity android:name=".DashboardActivity" android:exported="true"/>
+        
+        <activity android:name=".GamesDashboardActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false"/>
+
+        <activity android:name=".GameIntroActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".SelectColoredBallsActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".SelectAlphabetActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".MatchObjectActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".IdentifySymbolActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".IdentifyColorActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".FollowBallClockwiseActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".FollowBallAntiClockwiseActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".EyeballMovementActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".DirectionOfTheTargetActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".FindTheCharactersActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".CountAndChooseActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".MatchTheFollowingActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".ProgressActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".SettingsActivity" android:theme="@style/Theme.Ambieye.WithToolbar" android:exported="false" />
+        <activity android:name=".DoctorDashboardActivity" android:exported="false" />
+        <activity android:name=".PatientListActivity" android:exported="false" />
+        <activity android:name=".PersonalDetailsActivity" android:exported="false" />
+        <activity android:name=".ResetPasswordActivity" android:exported="false" />
+        <activity android:name=".QueriesActivity" android:exported="false" />
+        <activity android:name=".PatientDetailsActivity" android:exported="false" />
+        <activity android:name=".EditProfileActivity" android:exported="false" />
+        <activity android:name=".ReminderActivity" android:exported="false" />
+        <activity android:name=".ReviewDatesActivity" android:exported="false" />
+
+    </application>
+
+</manifest>

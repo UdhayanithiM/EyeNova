@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Ambieye" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Theme for activities with a Toolbar -->
+    <style name="Theme.Ambieye.WithToolbar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/dark_purple</item>
+        <item name="colorAccent">@color/dark_purple</item>
+    </style>
+</resources>

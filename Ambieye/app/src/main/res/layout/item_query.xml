@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answered"
+            android:textColor="#4CAF50"
+            android:background="#E8F5E9"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29/10/2025"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/tvQueryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="i have right eye problem"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvStatus"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr. Tester"
+            android:layout_below="@id/tvQueryTitle"/>
+
+        <ImageView
+            android:id="@+id/arrow_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_forward"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
